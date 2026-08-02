@@ -1,8 +1,24 @@
 aid: thread
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/thread.png
 name: Thread
-description: Thread is a company surfaced as a portfolio company of a16z, balderton-capital and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Thread (thread.com) was a UK-based fashion technology company that combined AI with human
+  expert stylists to deliver personalized clothing recommendations for men and women. Founded by Kieran
+  O'Neill and Ben Phillips and backed by Andreessen Horowitz (a16z) and Balderton Capital, Thread's brand,
+  technology and data were acquired by Marks & Spencer. The company subsequently entered administration
+  and has ceased trading; its site now serves only a shutdown notice. Enrichment found no public API,
+  developer portal, documentation, or event surface. This profile is retained as a network record of a
+  defunct portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/thread/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,15 +29,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-status: defunct
+x-status-note: Acquired by Marks & Spencer; entered administration and ceased trading. No API surface.
 tags:
 - Company
+- Fashion
+- Retail
+- Styling
+- Artificial Intelligence
+- E-Commerce
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/thread-domain-security.yml
 - type: Website
   url: https://www.thread.com/
